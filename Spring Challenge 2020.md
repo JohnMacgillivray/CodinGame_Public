@@ -1,10 +1,17 @@
 Game available to play here:
+
 https://www.codingame.com/multiplayer/bot-programming/spring-challenge-2020
+
 Final Ranking: 47 Legend
+
 https://www.codingame.com/contests/spring-challenge-2020/leaderboard/global
+
 Post Competition Forum
+
 https://www.codingame.com/forum/t/spring-challenge-2020-feedback-strategy/184113/37
+
 Post Competition Blog
+
 https://www.codingame.com/blog/spring-challenge-2020/
 
 This was my first ever competition of this type, having stumbled upon CodinGame about 3 weeks ago (since then I have obsessively built bots for some of the older competitions.) When I first started this competition I did well with a quick and lazy approach on the opening day, but over time as people started building better bots, my rank started slipping and I essentially lost motivation. I had some ideas of what I could do but not the confidence or willpower to try and get it to work and keep trying until it worked, and I couldn’t see exactly how to implement it, there were some gaps missing in my mental image of what I wanted to do. That all changed when my friend, Jarcan, joined the competition. He had some good ideas and I could see what I could do if i used some of his ideas, but it felt like my bot would simply be a cheap imitation of his bot. On wednesday night when I had pretty much given up the contest and was rank ~600, Jarcan encouraged me that my implementation would be sufficiently different, there was still time in the contest and there was still lots of room for improvement. Thursday morning idk what came over me but I built the bot. By 2am Saturday I was rank 30. It was a furious 2 days of bashing out code and theory crafting and trying things and failing and then sometimes improving. I couldn’t have done it without Jarcan - he connected dots for me I would not have otherwise seen and enabled me to have the additional insights I had that got me here. The strategy went like this:
