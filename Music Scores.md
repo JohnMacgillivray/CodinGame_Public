@@ -20,15 +20,15 @@ A) the image is given in Run-Length Encoding format
 
 e.g. W 20 B 200 means if you were to begin reading off the colour of each pixel on the image from left to right and then going to the next line, the first 20 pixels are white and the next 200 pixels are black
 
-First, I 'unpacked' this image data to generate a 2D array of 1s and 0s (1 for black, 0 for white) - as this meant I could manipulate and interact with the date much more easily
+First, I 'unpacked' this image data to generate a 2D array of 1s and 0s (1 for black, 0 for white) - as this meant I could manipulate and interact with the data much more easily
 
 B) as Cyber Lemonade guided in their article, we can then get the following by looking at the left most black pixels in the image:
 
-  i) stave bar 'thickness'
+    i) stave bar 'thickness'
   
-  ii) note height
+    ii) note height
   
-  iii) the height of each stave line in pixel co-ord terms (this will be used later to identify the pitch of a given note)
+    iii) the height of each stave line in pixel co-ord terms (this will be used later to identify the pitch of a given note)
 
 C) Note width (from left to right):
 
