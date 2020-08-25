@@ -33,11 +33,13 @@ B) as Cyber Lemonade guided in their article, we can then get the following by l
 C) Note width (from left to right):
 
   We can perform a search from left to right checking for each vertical column of pixels after the start of the stave to see whether they match an empty stave or not - we can then take these contiguous blocks of anomalous columns to be notes, which gives us not only the note widths, but the start and stop x co-ords of every note.
+  
   This was annoying in the sense that you can't only look for anomalous vertical columns of pixels which differ from the default white space with 5 black bars - you have to take into account the fact that you can get the start of the low C black line - which isn't yet technically the note, so you have to add in a catch here to make sure the vertical column is different from both whitespace with 5 black bars AND whitespace with 6 black bars.
 
 D) The pitch of each note
 
 Now that for every note we have its starting and ending horizontal co-ordinate, to get the pitch we simply jump to the middle of the note in terms of x-coordinate, and very similar to the horizontal search method, establish the contiguous block of pixels in the vertical column where the centre of the note is where that pixel does not match an empty stave with 5 black lines. From here, we take the data from B)iii) and build a simple function to establish what the note's pitch is based on the vertical coordinate of the note's midpoint relative to the 5 black staves 
+
 I will add that this actually had to be modified slightly to get around the 1 pixel high note lines edge case where you would miss the note entirely if you look directly down the middle of the note - so infact I deliberately looked just slightly off from the horizontal midpoint of the note when doing the vertical column scan to check for differences from the empty stave
 
 E) The duration of the note
